@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="h-screen md:flex">
+      <div class="hidden relative md:block md:flex-auto">
+        <img
+          class="h-full w-full object-cover"
+          src="./src/banner-login.png"
+          alt="background-login"
+        />
+        <p
+          class="text-xs text-white font-roboto absolute left-10 bottom-10"
+          style="font-family: 'Roboto', sans-serif"
+        >
+          Photo by <span class="underline">Alexandr Popadin</span>
+        </p>
+      </div>
+      <div class="relative h-full px-4 pt-9 sm:max-w-md sm:mx-auto md:px-12">
+        <img
+          class="hidden w-[12.5rem] mb-12 md:block"
+          src="./src/logo.png"
+          alt="Logo"
+        />
+        <h1
+          class="font-semibold text-gray-900 text-xl"
+          style="font-family: 'Poppins', sans-serif"
+        >
+          Nice to see you again
+        </h1>
+        <form class="mt-6" action="#" method="post">
+          <label
+            for=""
+            class="block text-sm text-gray-800 mb-2 ml-4"
+            style="font-family: Arial, sans-serif"
+            >Login</label
+          >
+          <input
+            type="text"
+            placeholder="Email or phone number"
+            class="w-full p-2 border rounded-lg mb-4"
+            style="
+              background: #f2f2f2;
+              color: #808080;
+              font-family: 'Roboto', sans-serif;
+            "
+          />
+          <label
+            for=""
+            class="block text-sm text-gray-800 mb-2 ml-4"
+            style="font-family: Arial, sans-serif"
+            >Password</label
+          >
+          <input
+            type="password"
+            placeholder="Enter Password"
+            class="w-full p-2 border rounded-lg mb-3 md:mb-5"
+            style="
+              background: #f2f2f2;
+              color: #808080;
+              font-family: 'Roboto', sans-serif;
+            "
+          />
+
+          <!-- Forgot Password -->
+          <a href="#" class="text-purple-600 text-sm float-right"
+            >Forgot password?</a
+          >
+          <button
+            type="submit"
+            class="w-full h-10 bg-purple-600 text-white px-4 py-2 rounded-lg hover:bg-purple-700 mt-6 md:mt-8"
+            style="font-family: 'Roboto', sans-serif"
+          >
+            Sign In
+          </button>
+          <button
+            type="button"
+            class="relative flex items-center justify-center w-full h-10 bg-gray-800 text-white px-4 py-2 rounded-lg hover:bg-gray-900 mt-12 md:mt-16"
+            style="font-family: 'Roboto', sans-serif"
+          >
+            <img src="src/google-icon.svg" alt="Google Icon" class="mr-2 h-5" />
+            Or sign in with Google
+          </button>
+          <p
+            class="text-center text-gray-900 text-xs mt-6"
+            style="font-family: Arial, sans-serif"
+          >
+            Dont have an account?
+            <a
+              class="text-purple-600"
+              style="font-family: Arial, sans-serif"
+              href="#"
+              >Sign up now</a
+            >
+          </p>
+          <img
+            class="mx-auto mt-10 md:hidden"
+            style="width: 200px"
+            src="./src/logo.png"
+            alt="Logo"
+          />
+          <p
+            class="text-stone-500 text-xs font-roboto text-center absolute bottom-10 left-0 right-0"
+            style="font-family: 'Roboto', sans-serif"
+          >
+            © Perfect Login 2021
+          </p>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
